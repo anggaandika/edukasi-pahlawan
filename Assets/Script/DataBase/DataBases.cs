@@ -26,6 +26,6 @@ public class DataBases : MonoBehaviour
     }
     public static ItemScript GetRandomItem()
     {
-        return instance.items.allItems[Random.Range(0, instance.items.allItems.Count())];
+        return instance.items.allItems[Random.Range(1, instance.items.allItems.Count())];
     }
 }

@@ -8,7 +8,7 @@ public class TimerSetting : MonoBehaviour
 {
     public Text textTimer;
 
-    public float waktu = 100;
+    public float waktu = 5;
 
     public bool GameAktif = true;
 
@@ -37,6 +37,7 @@ public class TimerSetting : MonoBehaviour
         {
             Debug.Log("Game Kalah");
             SceneManager.LoadScene(2, LoadSceneMode.Single);
+            GameObject.Find("MasterGame").GetComponent<PuzzelLevelSelection>().enabled = false;
             GameAktif = false;
         }
 

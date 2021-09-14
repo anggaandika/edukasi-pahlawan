@@ -25,7 +25,7 @@ public class TaroDanAmbil : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("nggak dapet goblok");
+                    Debug.Log("bisa cuy");
                 }
             }
         }

@@ -44,6 +44,7 @@
      <Compile Include="Assets\Script\DataBase\Item\ItemDatabase.cs" />
      <Compile Include="Assets\Script\DataBase\Item\ItemScript.cs" />
      <Compile Include="Assets\Script\System\main\PuzzelLevelSelection.cs" />
+     <Compile Include="Assets\Script\System\Score.cs" />
     <Reference Include="UnityEngine">
         <HintPath>E:/program/Unity/2020.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

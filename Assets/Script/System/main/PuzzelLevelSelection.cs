@@ -14,6 +14,7 @@ public class PuzzelLevelSelection : MonoBehaviour
     public DataBases dataBases;
 
     public GameObject time;
+
     public ItemDatabase[] level;
 
     private void Update()
@@ -62,15 +63,14 @@ public class PuzzelLevelSelection : MonoBehaviour
     private void SetPuzzlesPotos()
     {
         int num = 1;
-        string data = 1 + "-" + num;
         SetUI(DataBases.GetRandomItem());
         if (kanan == true)
         {
             kanan = false;
             this.Resets();
-            for (int i = 0; i <= 15; i++)
+            if (num <= 5)
             {
-                if (num <= 5)
+                for (int i = 0; i <= 15; i++)
                 {
                     GameObject
                         .Find("Piece (" + i + ")")

@@ -3384,7 +3384,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1230585240
 Transform:
@@ -5138,23 +5138,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataBases: {fileID: 2104871877}
   time: {fileID: 1673793426}
-  piecess:
-  - {fileID: 369739985}
-  - {fileID: 1814583445}
-  - {fileID: 297850863}
-  - {fileID: 425513872}
-  - {fileID: 1156384961}
-  - {fileID: 1790291815}
-  - {fileID: 1416659925}
-  - {fileID: 271756313}
-  - {fileID: 433525338}
-  - {fileID: 134497167}
-  - {fileID: 1923600332}
-  - {fileID: 1289112850}
-  - {fileID: 1696540761}
-  - {fileID: 365460859}
-  - {fileID: 564571876}
-  - {fileID: 1230585236}
   level:
   - {fileID: 11400000, guid: d063fbc1d0391664f94cc977404ebf87, type: 2}
   - {fileID: 11400000, guid: 713e63e66d1e6a94ab7cb1ef26e155f6, type: 2}
