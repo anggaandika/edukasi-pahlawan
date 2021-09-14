@@ -18,4 +18,4 @@ MonoBehaviour:
   tglLahir: 
   KotaLahir: 
   itemDeskripsi: 
-  itemFoto: {fileID: 21300000, guid: 32c4231fa68c06f4b8deab052f772ad8, type: 3}
+  itemFoto: {fileID: 21300000, guid: d36a9cdfbc966614884d3bf5cad1cb86, type: 3}

@@ -1,0 +1,277 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.14f1 (d0d1bb862f9d) revision 13685179'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1165; Version 2009; 64bit' Language: 'id' Physical Memory: 8074 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\program\Unity\2020.3.14f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Projek/Game/Unity/2D/puzzle/jigsaw/edukasi pahlawan
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61063
+Successfully changed project path to: D:/Projek/Game/Unity/2D/puzzle/jigsaw/edukasi pahlawan
+D:/Projek/Game/Unity/2D/puzzle/jigsaw/edukasi pahlawan
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 160.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
+[Subsystems] Discovering subsystems at path E:/program/Unity/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projek/Game/Unity/2D/puzzle/jigsaw/edukasi pahlawan/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce MX110 (ID=0x174e)
+    Vendor:   
+    VRAM:     2010 MB
+    Driver:   27.21.14.6231
+Initialize mono
+Mono path[0] = 'E:/program/Unity/2020.3.14f1/Editor/Data/Managed'
+Mono path[1] = 'E:/program/Unity/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/program/Unity/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/program/Unity/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/program/Unity/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.071581 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 120.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.428 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4429ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1815ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (472ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (447ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (121ms)
+				BeforeProcessingInitializeOnLoad (27ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.535154 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 230.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.195 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5197ms)
+		BeginReloadAssembly (378ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (4654ms)
+			LoadAssemblies (2099ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (893ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (138ms)
+			SetupLoadedEditorAssemblies (1157ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (231ms)
+				BeforeProcessingInitializeOnLoad (227ms)
+				ProcessInitializeOnLoadAttributes (620ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.32 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2195 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.2 MB.
+System memory in use after: 108.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 2639.
+Total: 5.400600 ms (FindLiveObjects: 0.346400 ms CreateObjectMapping: 0.185600 ms MarkObjects: 4.819100 ms  DeleteObjects: 0.047200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Sprite/Pahlawan/Level 2/Agus Salim.jpg
+  artifactKey: Guid(69bbabf8388c8144498e5d95f3f68206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 2/Agus Salim.jpg using Guid(69bbabf8388c8144498e5d95f3f68206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54eba4ee856661b31dbc5a18a2a8ab1f') in 1.673689 seconds 
+  Import took 1.760538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Sprite/Pahlawan/Level 2/Pangeran Diponegoro.jpg
+  artifactKey: Guid(7061a4447c2a94142adc1f6341255c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 2/Pangeran Diponegoro.jpg using Guid(7061a4447c2a94142adc1f6341255c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abe2f15a37c4fd8f1eb601c36e38ce7') in 0.212190 seconds 
+  Import took 0.322660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Sprite/Pahlawan/Level 3/Raden Dewi Sartika.jpg
+  artifactKey: Guid(7d9613ca20ab9ed40a2237ef9a860f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 3/Raden Dewi Sartika.jpg using Guid(7d9613ca20ab9ed40a2237ef9a860f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ed5f5af8b7a8f291769a156f226180') in 0.229757 seconds 
+  Import took 0.254574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Sprite/Pahlawan/Level 3/Sutan Syahrir.jpg
+  artifactKey: Guid(4c432f0f8f4c6a44f9edc21ee46b6f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 3/Sutan Syahrir.jpg using Guid(4c432f0f8f4c6a44f9edc21ee46b6f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee61ab191c08e2efd2fb8f59064ec489') in 0.174242 seconds 
+  Import took 0.196749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Sprite/Pahlawan/Level 1/Soekarno.jpg
+  artifactKey: Guid(a29f81c40706ebf418a77daebcca592d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 1/Soekarno.jpg using Guid(a29f81c40706ebf418a77daebcca592d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469072cf432f4aa5bc53153d4439f459') in 0.128872 seconds 
+  Import took 0.149705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/Sprite/Pahlawan/Level 1/Kapitan Pattimura.JPG
+  artifactKey: Guid(d36a9cdfbc966614884d3bf5cad1cb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 1/Kapitan Pattimura.JPG using Guid(d36a9cdfbc966614884d3bf5cad1cb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b7817cf477238453c91251087563f8') in 0.108607 seconds 
+  Import took 0.116787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Sprite/Pahlawan/Level 1/Wr Supratman.jpg
+  artifactKey: Guid(32c4231fa68c06f4b8deab052f772ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 1/Wr Supratman.jpg using Guid(32c4231fa68c06f4b8deab052f772ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db7e933586c7a024150e8fdafea6f00') in 0.099751 seconds 
+  Import took 0.148066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/Sprite/Pahlawan/Level 3/hasyimasyari.jpg
+  artifactKey: Guid(4c74354d3e4e0c049a7c0632a2f26a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 3/hasyimasyari.jpg using Guid(4c74354d3e4e0c049a7c0632a2f26a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfe050b5d6dab4f30a6a4ebadca1cbb') in 0.186479 seconds 
+  Import took 0.289467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Sprite/Pahlawan/Level 3/Soedirman.jpg
+  artifactKey: Guid(5c59390c2f6efd44d98d8be48ada9a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 3/Soedirman.jpg using Guid(5c59390c2f6efd44d98d8be48ada9a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a18929357cce5947b9e37a1a8acfe9') in 0.326161 seconds 
+  Import took 0.360217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Sprite/Pahlawan/Level 1/Ki Hajar Dewantara.jpg
+  artifactKey: Guid(0f63016f54c4522418322e631a144119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 1/Ki Hajar Dewantara.jpg using Guid(0f63016f54c4522418322e631a144119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f61728d2b5fc340d870bfa829dd56e') in 0.085727 seconds 
+  Import took 0.112844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/Sprite/Pahlawan/Level 3/Mohammad Yamin.jpg
+  artifactKey: Guid(02b8c571de5b2d34e8fea106906693c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 3/Mohammad Yamin.jpg using Guid(02b8c571de5b2d34e8fea106906693c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15eefec7000979d8e32773daba5f90b') in 0.189293 seconds 
+  Import took 0.247367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Sprite/Pahlawan/Level 2/Sultan Hasanudin.jpg
+  artifactKey: Guid(c08331f306ceb3e43a371641293e23e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 2/Sultan Hasanudin.jpg using Guid(c08331f306ceb3e43a371641293e23e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c4e7b38d41661ea95577289b49db15') in 0.144831 seconds 
+  Import took 0.178220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Sprite/Pahlawan/Level 2/Bung Hatta 2.jpg
+  artifactKey: Guid(a45940022856564468fbc63559a9040d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 2/Bung Hatta 2.jpg using Guid(a45940022856564468fbc63559a9040d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06c204f624dad30805361bbfd8483c7') in 0.223667 seconds 
+  Import took 0.296524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/Sprite/Pahlawan/Level 2/Bung Hatta 1.jpg
+  artifactKey: Guid(12a6fadd995af114ba48303f8f364791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 2/Bung Hatta 1.jpg using Guid(12a6fadd995af114ba48303f8f364791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e80ef251d4c2c4e693af3cb53260ab') in 0.129274 seconds 
+  Import took 0.137418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Sprite/Pahlawan/Level 1/kartini.jpg
+  artifactKey: Guid(b8282412f609f5a40989526086bd8a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 1/kartini.jpg using Guid(b8282412f609f5a40989526086bd8a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0c9dcda7ee27242a26b07d7d805650') in 0.150143 seconds 
+  Import took 0.192614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Sprite/Pahlawan/Level 2/Cut Nyak Dien.jpg
+  artifactKey: Guid(161e33f4f970d434fab6672a4814f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Pahlawan/Level 2/Cut Nyak Dien.jpg using Guid(161e33f4f970d434fab6672a4814f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b62f13ed585928108ec9f28737963c') in 0.134289 seconds 
+  Import took 0.169195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 244.108917 seconds.
+  path: Assets/Scenes/Game Over.unity
+  artifactKey: Guid(b0b6bd58bca988a46b6ebe0e8bf1c14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Over.unity using Guid(b0b6bd58bca988a46b6ebe0e8bf1c14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b749bd7bb622c62a9041a54a5a49f62a') in 0.030748 seconds 
+  Import took 0.157450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.787670 seconds.
+  path: Assets/Scenes/Game Over.unity
+  artifactKey: Guid(b0b6bd58bca988a46b6ebe0e8bf1c14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game Over.unity using Guid(b0b6bd58bca988a46b6ebe0e8bf1c14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0953c1a75bf9157ba6f6bc8a33a2f4d8') in 0.005480 seconds 
+  Import took 1.578526 seconds .
+

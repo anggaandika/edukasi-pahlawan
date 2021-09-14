@@ -6,8 +6,13 @@ using UnityEngine.UI;
 public class PuzzelLevelSelection : MonoBehaviour
 {
     private Vector3 kananPosisi;
+
+    private bool kanan = false;
+
     private Sprite image;
+
     public DataBases dataBases;
+
     public GameObject time;
     public ItemDatabase[] level;
 
@@ -15,6 +20,22 @@ public class PuzzelLevelSelection : MonoBehaviour
     {
         int selectedLevel = PlayerPrefs.GetInt("selectedLevel");
         this.SelectILevel(selectedLevel);
+        for (int i = 0; i <= 15; i++)
+        {
+            if (
+                !GameObject
+                    .Find("Piece (" + i + ")")
+                    .transform
+                    .GetComponent<PieceScript>()
+                    .diKananPosisi
+                    .Equals(true)
+            ) break;
+
+            if (i == 15)
+            {
+                kanan = true;
+            }
+        }
     }
 
     private void SelectILevel(int levels)
@@ -41,35 +62,40 @@ public class PuzzelLevelSelection : MonoBehaviour
     private void SetPuzzlesPotos()
     {
         int num = 1;
-        int tester = 0;
         string data = 1 + "-" + num;
-        SetUI(DataBases.GetItemById(data));
-        for (int i = 0; i <= 15; i++)
+        SetUI(DataBases.GetRandomItem());
+        if (kanan == true)
         {
-            if (GameObject.Find("Piece (" + i + ")").GetComponent<PieceScript>().diKananPosisi == true)
+            kanan = false;
+            this.Resets();
+            for (int i = 0; i <= 15; i++)
             {
-                if (tester == 15)
+                if (num <= 5)
                 {
-                    this.Resets();
-                    if (num <= 5)
-                    {
-                        GameObject.Find("Piece (" + i + ")").transform.Find("Gambar").GetComponent<SpriteRenderer>().sprite
-                        = image;
-                    }
-                    num++;
+                    GameObject
+                        .Find("Piece (" + i + ")")
+                        .transform
+                        .Find("Gambar")
+                        .GetComponent<SpriteRenderer>()
+                        .sprite = image;
                 }
-                tester++;
+                num++;
             }
-            // GameObject.Find("Piece (" + i + ")").transform.Find("Gambar").GetComponent<SpriteRenderer>().sprite
-            // = image;
         }
     }
+
     private void Resets()
     {
         for (int j = 0; j <= 15; j++)
         {
-            GameObject.Find("Piece (" + j + ")").GetComponent<PieceScript>().acakGambar();
-            GameObject.Find("Piece (" + j + ")").GetComponent<PieceScript>().diKananPosisi = false;
+            GameObject
+                .Find("Piece (" + j + ")")
+                .GetComponent<PieceScript>()
+                .acakGambar();
+            GameObject
+                .Find("Piece (" + j + ")")
+                .GetComponent<PieceScript>()
+                .diKananPosisi = false;
         }
     }
 
