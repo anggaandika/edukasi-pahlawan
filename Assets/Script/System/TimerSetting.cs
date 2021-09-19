@@ -6,11 +6,12 @@ using UnityEngine.UI;
 
 public class TimerSetting : MonoBehaviour
 {
+
     public Text textTimer;
 
-    public float waktu = 5;
+    public static float waktu = 5f;
 
-    public bool GameAktif = true;
+    public static bool GameAktif = true;
 
     // Update is called once per frame
     void SetText()
@@ -29,15 +30,19 @@ public class TimerSetting : MonoBehaviour
             s += Time.deltaTime;
             if (s >= 1)
             {
-                waktu--;
+                waktu++;
                 s = 0;
             }
         }
+        int time = (int) waktu;
         if (GameAktif && waktu <= 0)
         {
-            Debug.Log("Game Kalah");
+            Score.time += (int)waktu;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
-            GameObject.Find("MasterGame").GetComponent<PuzzelLevelSelection>().enabled = false;
+            GameObject
+                .Find("MasterGame")
+                .GetComponent<PuzzelLevelSelection>()
+                .enabled = false;
             GameAktif = false;
         }
 

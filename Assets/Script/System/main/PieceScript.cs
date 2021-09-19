@@ -5,9 +5,13 @@ using UnityEngine.Rendering;
 
 public class PieceScript : MonoBehaviour
 {
+
     private Vector3 kananPosisi;
+
     public bool diKananPosisi;
+
     public bool selected;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,7 @@ public class PieceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int selectedLevel = PlayerPrefs.GetInt("selectedLevel");
         if (Vector3.Distance(transform.position, kananPosisi) < 0.5f)
         {
             if (!selected)
@@ -27,12 +32,15 @@ public class PieceScript : MonoBehaviour
                     transform.position = kananPosisi;
                     diKananPosisi = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
+                    Score.scorePice += (selectedLevel + 1) * 10;
                 }
             }
         }
     }
-    public void acakGambar() 
+
+    public void acakGambar()
     {
-        transform.position = new Vector3(Random.Range(3f, 5f), Random.Range(0f, 0f));
+        transform.position =
+            new Vector3(Random.Range(3f, 5f), Random.Range(0f, 0f));
     }
 }

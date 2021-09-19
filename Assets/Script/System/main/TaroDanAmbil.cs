@@ -28,6 +28,10 @@ public class TaroDanAmbil : MonoBehaviour
                     Debug.Log("bisa cuy");
                 }
             }
+            else
+            {
+                Debug.Log("");
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {

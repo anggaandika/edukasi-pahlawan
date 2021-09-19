@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PuzzelLevelSelection : MonoBehaviour
@@ -17,8 +18,11 @@ public class PuzzelLevelSelection : MonoBehaviour
 
     public ItemDatabase[] level;
 
+    static int num = 0;
+
     private void Update()
     {
+        SetUI(DataBases.GetRandomItem());
         int selectedLevel = PlayerPrefs.GetInt("selectedLevel");
         this.SelectILevel(selectedLevel);
         for (int i = 0; i <= 15; i++)
@@ -57,13 +61,11 @@ public class PuzzelLevelSelection : MonoBehaviour
                 break;
         }
         dataBases.items = level[0];
-        this.SetPuzzlesPotos();
+        this.SetPuzzlesPotos(levels);
     }
 
-    private void SetPuzzlesPotos()
+    private void SetPuzzlesPotos(int levels)
     {
-        int num = 1;
-        SetUI(DataBases.GetRandomItem());
         if (kanan == true)
         {
             kanan = false;
@@ -79,7 +81,18 @@ public class PuzzelLevelSelection : MonoBehaviour
                         .GetComponent<SpriteRenderer>()
                         .sprite = image;
                 }
+                Score.scorePuzel += (levels + 1) * 10;
                 num++;
+                Debug.Log (num);
+            }
+            if (num == 1)
+            {
+                GameObject
+                    .Find("MasterGame")
+                    .GetComponent<PuzzelLevelSelection>()
+                    .enabled = false;
+                    TimerSetting.GameAktif = false;
+                SceneManager.LoadScene(2, LoadSceneMode.Single);
             }
         }
     }
