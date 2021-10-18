@@ -13,11 +13,19 @@ public class Menu : MonoBehaviour
     {
         subMenu.SetActive(false);
         mainMenu.SetActive(true);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+        int selectedLevel = PlayerPrefs.GetInt("selectedLevel");
+
+        if (selectedLevel.Equals(1))
+        {
+            subMenu.SetActive(true);
+            mainMenu.SetActive(false);
+        }
+        else
+        {
+            subMenu.SetActive(false);
+            mainMenu.SetActive(true);
+        }
     }
 
     public void StartGame()
