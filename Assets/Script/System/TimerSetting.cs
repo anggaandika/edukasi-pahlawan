@@ -15,7 +15,7 @@ public class TimerSetting : MonoBehaviour
 
     public static bool GameAktif = true;
 
-    int selectedLevel;
+    static int selectedLevel;
 
     // Update is called once per frame
     void SetText()
@@ -34,18 +34,14 @@ public class TimerSetting : MonoBehaviour
         if (selectedLevel == 2) waktu = wUp;
     }
 
-    private void FixedUpdate()
+    float s;
+
+    void Update()
     {
         selectedLevel = PlayerPrefs.GetInt("selectedLevel");
         if (selectedLevel == 0) waktu = 0;
         if (selectedLevel == 1) waktu = wMedium;
         if (selectedLevel == 2) waktu = wUp;
-    }
-
-    float s;
-
-    void Update()
-    {
         if (GameAktif)
         {
             s += Time.deltaTime;
