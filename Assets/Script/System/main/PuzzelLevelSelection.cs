@@ -84,7 +84,7 @@ public class PuzzelLevelSelection : MonoBehaviour
                 num++;
                 Debug.Log (num);
             }
-            if (num == 1)
+            if (num == 5)
             {
                 GameObject
                     .Find("MasterGame")

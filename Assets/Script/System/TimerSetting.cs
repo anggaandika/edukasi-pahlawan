@@ -22,7 +22,7 @@ public class TimerSetting : MonoBehaviour
     {
         int menit = Mathf.FloorToInt(waktu / 60);
         int detik = Mathf.FloorToInt(waktu % 60);
-        GameObject.Find("waktu").GetComponent<Text>().text =
+        GameObject.Find("Canvas/waktu").GetComponent<Text>().text =
             menit.ToString("00") + ":" + detik.ToString("00");
     }
 
