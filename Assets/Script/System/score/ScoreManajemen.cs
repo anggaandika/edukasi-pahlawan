@@ -49,6 +49,12 @@ public class ScoreManajemen : MonoBehaviour
     public void Return()
     {
         PlayerPrefs.SetInt("Return", 1);
+        GameObject
+            .Find("MasterGame")
+            .GetComponent<PuzzelLevelSelection>()
+            .enabled = false;
+        GameObject.Find("MasterGame").GetComponent<TimerSetting>().enabled =
+            false;
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

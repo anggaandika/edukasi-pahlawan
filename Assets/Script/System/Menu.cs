@@ -38,5 +38,13 @@ public class Menu : MonoBehaviour
     {
         PlayerPrefs.SetInt("selectedLevel", level);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
+        GameObject
+            .Find("MasterGame")
+            .GetComponent<PuzzelLevelSelection>()
+            .enabled = true;
+        GameObject
+            .Find("MasterGame")
+            .GetComponent<TimerSetting>()
+            .enabled = true;
     }
 }

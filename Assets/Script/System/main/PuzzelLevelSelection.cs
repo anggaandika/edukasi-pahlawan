@@ -14,14 +14,13 @@ public class PuzzelLevelSelection : MonoBehaviour
 
     public DataBases dataBases;
 
-    public GameObject time;
-
     public ItemDatabase[] level;
 
     static int num = 0;
 
     private void Update()
     {
+        GameObject.Find("MasterGame").SetActive(true);
         SetUI(DataBases.GetRandomItem());
         int selectedLevel = PlayerPrefs.GetInt("selectedLevel");
         this.SelectILevel(selectedLevel);
@@ -91,7 +90,11 @@ public class PuzzelLevelSelection : MonoBehaviour
                     .Find("MasterGame")
                     .GetComponent<PuzzelLevelSelection>()
                     .enabled = false;
-                    TimerSetting.GameAktif = false;
+                GameObject
+                    .Find("MasterGame")
+                    .GetComponent<TimerSetting>()
+                    .enabled = false;
+                TimerSetting.GameAktif = false;
                 SceneManager.LoadScene(2, LoadSceneMode.Single);
             }
         }
