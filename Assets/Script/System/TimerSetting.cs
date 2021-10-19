@@ -38,10 +38,6 @@ public class TimerSetting : MonoBehaviour
 
     void Update()
     {
-        selectedLevel = PlayerPrefs.GetInt("selectedLevel");
-        if (selectedLevel == 0) waktu = 0;
-        if (selectedLevel == 1) waktu = wMedium;
-        if (selectedLevel == 2) waktu = wUp;
         if (GameAktif)
         {
             s += Time.deltaTime;
