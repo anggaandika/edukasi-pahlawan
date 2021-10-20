@@ -18,6 +18,37 @@ public class PuzzelLevelSelection : MonoBehaviour
 
     static int num = 0;
 
+    int leveling;
+
+    private void Awake()
+    {
+        SetUI(DataBases.GetRandomItem());
+        switch (PlayerPrefs.GetInt("selectedLevel"))
+        {
+            case '0':
+                leveling = 2;
+                break;
+            case '1':
+                leveling = 5;
+                break;
+            case '2':
+                leveling = 5;
+                break;
+            default:
+                leveling = 2;
+                break;
+        }
+        for (int i = 0; i <= 15; i++)
+        {
+            GameObject
+                .Find("Piece (" + i + ")")
+                .transform
+                .Find("Gambar")
+                .GetComponent<SpriteRenderer>()
+                .sprite = image;
+        }
+    }
+
     private void Update()
     {
         GameObject.Find("MasterGame").SetActive(true);
@@ -69,7 +100,7 @@ public class PuzzelLevelSelection : MonoBehaviour
         {
             kanan = false;
             this.Resets();
-            if (num <= 5)
+            if (num <= leveling)
             {
                 for (int i = 0; i <= 15; i++)
                 {
@@ -84,7 +115,7 @@ public class PuzzelLevelSelection : MonoBehaviour
                 num++;
                 Debug.Log (num);
             }
-            if (num == 5)
+            if (num == leveling)
             {
                 GameObject
                     .Find("MasterGame")

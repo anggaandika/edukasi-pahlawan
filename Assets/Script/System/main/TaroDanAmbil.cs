@@ -30,7 +30,7 @@ public class TaroDanAmbil : MonoBehaviour
             }
             else
             {
-                Debug.Log("");
+                Debug.Log("null");
             }
         }
         if (Input.GetMouseButtonUp(0))

@@ -26,6 +26,13 @@ public class TimerSetting : MonoBehaviour
             menit.ToString("00") + ":" + detik.ToString("00");
     }
 
+    private void Awake()
+    {
+        SetText();
+    }
+
+    float s;
+
     void Start()
     {
         selectedLevel = PlayerPrefs.GetInt("selectedLevel");
@@ -33,8 +40,6 @@ public class TimerSetting : MonoBehaviour
         if (selectedLevel == 1) waktu = wMedium;
         if (selectedLevel == 2) waktu = wUp;
     }
-
-    float s;
 
     void Update()
     {
